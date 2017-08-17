@@ -11,7 +11,7 @@ module.exports = {
   locale: 'en',
   basename: '/',
   clientTopology: {
-    staticsBaseUrl: '//localhost:3200/'
+    staticsBaseUrl: 'http://tdd-workshop-tic-tac-toe-client-yanivef.c9users.io:8081/'
   },
   newRelicEndUserHeader: '',
   newRelicEndUserFooter: ''

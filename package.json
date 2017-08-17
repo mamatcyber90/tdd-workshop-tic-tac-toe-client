@@ -8,7 +8,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "yoshi start --entry-point=./test/fakes/start-fake-server.js",
+    "start": "PORT=8080, IP=0.0.0.0 yoshi start --entry-point=./test/fakes/start-fake-server.js",
     "pretest": "yoshi lint && yoshi build",
     "build": ":",
     "test": "yoshi test"
@@ -42,5 +42,12 @@
   },
   "eslintConfig": {
     "extends": "wix/react"
+  },
+  "yoshi": {
+	  "servers": {
+	    "cdn": {
+	      "port": 8081
+	    }
+	  }
   }
 }

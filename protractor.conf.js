@@ -7,5 +7,11 @@ export const config = {
   onPrepare() {
     browser.ignoreSynchronization = true;
     start(3100);
+  },
+  capabilities: {
+    browserName: 'chrome',
+    chromeOptions: {
+      args: ['--headless']
+    }
   }
 };
